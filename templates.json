@@ -18,6 +18,21 @@
 			}]
 		},
 		{
+			"type": 2,
+			"title": "Minecraft_CurseForge",
+			"description": "Create CurseForge MineCraft Server",
+			"platform": "linux",
+			"repository":{
+				"url": "https://github.com/pmoore240/portainerCustom",
+				"stackfile": "stackFiles/Forge.yml"
+			},
+			"env": [{
+				"name": "CF_SERVER_MOD",
+				"label": "ServerName"
+			}
+			]
+		},
+		{
 			"type": 1,
 			"title": "Nginx",
 			"description": "High performance web server",
@@ -1061,24 +1076,6 @@
 	    "description": "CockroachDB cluster",
 	    "note": "Deploys an insecure CockroachDB cluster, please refer to <a href=\"https://www.cockroachlabs.com/docs/stable/orchestrate-cockroachdb-with-docker-swarm.html\" target=\"_blank\">CockroachDB documentation</a> for production deployments.",
 	    "stackfile": "https://raw.githubusercontent.com/portainer/templates/master/stacks/cockroachdb/edge/docker-stack.yml"
-	  },
-	  {
-		"type": 2,
-		"title": "Minecraft_CurseForge",
-		"description": "Create CurseForge MineCraft Server",
-		"categories": [
-			"Games"
-		],
-		"platform": "linux",
-		"repository":{
-			"url": "https://github.com/pmoore240/portainerCustom",
-			"stackfile": "stackFiles/Forge.yml"
-		},
-		"env": [{
-			"name": "CF_SERVER_MOD",
-			"label": "ServerName"
-			}
-		]
 	  }
 	]
 }
