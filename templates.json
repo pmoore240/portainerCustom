@@ -1061,6 +1061,24 @@
 	    "description": "CockroachDB cluster",
 	    "note": "Deploys an insecure CockroachDB cluster, please refer to <a href=\"https://www.cockroachlabs.com/docs/stable/orchestrate-cockroachdb-with-docker-swarm.html\" target=\"_blank\">CockroachDB documentation</a> for production deployments.",
 	    "stackfile": "https://raw.githubusercontent.com/portainer/templates/master/stacks/cockroachdb/edge/docker-stack.yml"
+	  },
+	  {
+		"type": 2,
+		"title": "Minecraft_CurseForge",
+		"description": "Create CurseForge MineCraft Server",
+		"categories": [
+			"Games"
+		],
+		"platform": "linux",
+		"repository":{
+			"url": "https://github.com/pmoore240/portainerCustom.git",
+			"stackfile": "stackFiles/Forge.yaml"
+		},
+		"env": [{
+			"name": "CF_SERVER_MOD",
+			"label": "ServerName"
+			}
+		]
 	  }
 	]
 }

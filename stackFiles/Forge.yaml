@@ -1,0 +1,22 @@
+minecraft-server:
+  ports:
+    - "25565:25565"
+
+  environment:
+    EULA: "TRUE"
+    TZ: "Europe/London"
+    TYPE: "CURSEFORGE"
+    CF_SERVER_MOD: ${CF_SERVER_MOD}.zip
+
+
+  image: itzg/minecraft-server
+
+  container_name: ${CF_SERVER_MOD}
+
+  tty: true
+  stdin_open: true
+  restart: always
+
+  volumes:
+    - /opt/Minecraft/servers/${CF_SERVER_MOD}:/data
+    - /opt/Minecraft/mods/${CF_SERVER_MOD}:/modpacks
