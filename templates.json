@@ -1071,8 +1071,8 @@
 		],
 		"platform": "linux",
 		"repository":{
-			"url": "https://github.com/pmoore240/portainerCustom.git",
-			"stackfile": "stackFiles/Forge.yaml"
+			"url": "https://github.com/pmoore240/portainerCustom",
+			"stackfile": "stackFiles/Forge.yml"
 		},
 		"env": [{
 			"name": "CF_SERVER_MOD",
